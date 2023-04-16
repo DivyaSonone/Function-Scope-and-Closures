@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Scope</title>
+
+    <script>
+      let username;
+
+      function askName() {
+        username = prompt('What is your name?');
+      }
+      
+      function greet() {
+        let message = 'Hello ' + username + '!';
+        alert(message);
+      }
+    </script>
+ </head>
+ <body>
+   <h1>Welcome</h1>
+   <p onclick="askName();">
+     Click here to enter your name.
+   </p>
+   
+   <p onclick="greet();">
+     Click here to show a greeting.
+   </p>
+ </body>
+</html>
